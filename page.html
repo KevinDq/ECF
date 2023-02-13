@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />    
+    <script src="./assets/js/api.js" defer></script>
+    <title>OMDB API</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Liste de films</h1>
+        <h6>Demo</h6>
+
+        <div class="row">
+            <div class="form-inline">
+                <input type="text" class="form-control" id="title" placeholder="Entrez un titre">
+                <input type="text" class="form-control" id="years" placeholder="Entre une année">
+                <select name="type" id="type" class="form-control">
+                    <option value="#"></option>
+                    <option value="movie">movie</option>
+                    <option value="serie">serie</option>
+                    <option value="episode">episode</option>
+                </select>
+                <button id="search" class="btn btn-primary">Search</button>
+            </div>            
+        </div>
+
+        <div class="row" id="result">
+
+        </div>
+
+        <nav aria-label="Page navigation example" id="pagination">
+
+        </nav>
+    </div>
+    
+</body>
+</html>

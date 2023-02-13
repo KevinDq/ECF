@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />    
+    <script src="./assets/js/app.js" defer></script>
+    <title>Médiatèque</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div id="alert"></div>
+      <div class="row mt-2">
+        <h1>Liste de films</h1>
+      </div>
+      <div class="row mt-2" id="form"></div>
+      <div class="row mt-2">
+        <div class="form-group">
+          <label for="filtre">Filtrer par :</label>
+          <select class="form-control" id="filtre">
+            <option value="#">Filtrer par</option>
+            <option value="title">Titre</option>
+            <option value="years">Année</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <table class="table table-stripped">
+          <thead>
+            <th>Titre</th>
+            <th>Année</th>
+            <th>Réalisateur</th>
+            <th></th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  
+</html>
